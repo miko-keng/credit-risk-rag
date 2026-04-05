@@ -17,9 +17,7 @@ except:
 
 # Load RAG
 embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
-import os
 
-# ensure the folder exists
 import os
 if not os.path.exists("./chroma_db"):
     os.makedirs("./chroma_db")
