@@ -54,10 +54,10 @@ Most credit scoring models are "black boxes"—they give a decision but don't ex
    ```
 
 4. **Run the application**
+   ```bash
+   streamlit run app.py
+   ```
 
-```bash
-streamlit run app.py
-```
 📊 Model Performance
 Best Model: Random Forest Classifier (Optimized via K-Fold Cross-Validation).
 
