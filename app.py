@@ -20,9 +20,10 @@ embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
 import os
 
 # ensure the folder exists
+import os
 if not os.path.exists("./chroma_db"):
     os.makedirs("./chroma_db")
-    
+
 vectorstore = Chroma(persist_directory="./chroma_db", embedding_function=embeddings)
 
 # --- 2. UI ---
